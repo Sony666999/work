@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Книжный уголок</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container1">
+    <div class="overlay">
+      <nav>
+        <button class="button"><a href="index.html">О нас</a></button>
+      </nav>
+    </div>
+  </div>
+
+
+<main class="main1">
+    <div id="table-map">
+      <img src="Frame 9.png" alt="Схема рассадки" usemap="#table-map">
+      <map name="table-map">
+        <area shape="rect" coords="2,0,253,112" alt="Столик 1" data-table="1">
+        <area shape="rect" coords="311,0,566,116" alt="Столик 2" data-table="2">
+        <area shape="rect" coords="0,196,141,312" alt="Столик 3" data-table="3">
+        <area shape="rect" coords="0,376,144,529" alt="Столик 4" data-table="4">
+        <area shape="rect" coords="3342,531,224,198" alt="Столик 5" data-table="5">
+        <area shape="rect" coords="424,196,565,351" alt="Столик 6" data-table="6">
+        <area shape="rect" coords="424,414,566,529" alt="Столик 7" data-table="7">
+      </map>
+    </div>
+    <div id="booking-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Бронирование столика</h2>
+        <form id="booking-form">
+          <label for="tableNumber">Столик: <span id="tableNumberDisplay"></span></label>
+          <br><br>
+    
+          <label for="date">Дата:</label>
+          <input type="date" id="date" name="date" required><br><br>
+    
+          <label for="time">Время:</label>
+          <input type="time" id="time" name="time" required><br><br>
+    
+          <label for="guests">Количество гостей:</label>
+          <input type="number" id="guests" name="guests" min="1" required><br><br>
+    
+          <label for="name">Имя и фамилия:</label>
+          <input type="text" id="name" name="name" required><br><br>
+    
+          <input type="submit" value="Забронировать">
+        </form>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script2.js"></script>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.flatpickr-day.today {
+    background-color: #f5c6bb;
+    color: black;
+}
+
+.flatpickr-day.selected {
+    background-color: #f50f00;
+    color: white;
+}
